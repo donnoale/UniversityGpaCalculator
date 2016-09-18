@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Media Ponderata e Voto Laurea</title>
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="media.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="media.js"></script>
+		<script type="text/javascript">
+  window.___gcfg = {lang: 'it'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<style>#iubenda-cs-banner{top:0!important;left:0!important;position:fixed!important;width:100%!important;z-index:99999998!important;background:#000;background:rgba(0,0,0,.85)}.iubenda-cs-content{display:block;margin:0 auto;padding:10px 50px 10px 20px;width:auto;font-family:Helvetica,Arial,FreeSans,sans-serif;font-size:12px;color:#fff!important}.iubenda-cs-rationale{max-width:900px;position:relative;margin:0 auto}.iubenda-banner-content>p{font-family:Helvetica,Arial,FreeSans,sans-serif;line-height:1.5}.iubenda-cs-close-btn{color:#fff!important;text-decoration:none;font-size:12px;position:absolute;top:-5px;right:-20px;border:1px solid #fff!important;display:inline-block;width:20px;height:20px;line-height:20px;text-align:center;border-radius:10px}.iubenda-cs-cookie-policy-lnk{text-decoration:underline;color:#fff!important;font-size:12px;font-weight:900}</style>
+<script type="text/javascript">/*<![CDATA[*/
+var _iub = _iub || [];
+_iub.csConfiguration = {
+    siteId: 574028, cookiePolicyId: 7875833, lang: 'it', localConsentDomain: 'calcolalamedia.altervista.org',
+    banner: { applyStyles: false, content: "This site uses third-party cookies to send you advertising in line with your preferences. If you want to learn more or opt out of all or some cookies, %{cookie_policy_link}. By closing this banner, scrolling this page, clicking on a link or continuing navigation in any other way, you allow usage of cookies.", cookiePolicyLinkCaption: "click here"}
+};
+(function (w, d) {
+    var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/cookie_solution/iubenda_cs.js"; tag.parentNode.insertBefore(s, tag); };
+    if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
+})(window, document);
+/*]]>*/</script>
+	</head>
+	<body>
+    </br>
+    </br>
+    </br>
+		<h1>Media ponderata e voto di laurea</h1>
+		<form>
+			<span id="main">
+			<h2> <span id="tit" >Aggiungi i tuoi esami</span> (tranne le idoneit&agrave;)</h2>
+			<h4> Puoi avanzare fra i campi premendo Invio :]     <a id="opzioni" class="but blue small">Opzioni</a></h4>
+			<div class="leftAlign hidden">
+				<input type="checkbox" name="nome" value="nome"/> Non voglio inserire i nomi degli esami </br>
+				<input type="checkbox" name="crediti" value="crediti"/> Voglio solo la media aritmetica </br>
+			</div></br>
+			<table id="lista">
+				<tr> <th> </th><th> Nome (opzionale)</th><th>Voto</th><th>Crediti</th></tr>
+				<tr>
+					<td><input type="button" class="meno" value="-" title="Elimina questa riga"/></td>
+					<td><input type="text" class="esame"/></td>
+					<td><input type="text" class="voto" /></td>
+					<td><input type="text" class="crediti"/></td>
+					<td id="piu1"><input type="button" id="piu" value="+" title="Aggiungi una riga"/></td>
+				</tr>
+			</table>
+			</br>
+			<input id="calc" type="button" value="Calcola Media" title="NB: Le righe non valide sarannno ignorate."/></br></br>
+			<div id="risultati" class="hidden">
+			Esami sostenuti: <span id="nEsami"></span></br>
+			Totale Crediti: <span id="totCred"></span></br></br>
+			
+			Media Ponderata: <span id="mediaP"></span></br>
+			Media Aritmetica: <span id="mediaA"></span></br>
+			
+			
+			<b>Voto base di Laurea: <span id="laurea"></span></b></br></br></br>
+			</div>
+			</span>
+			<span id="feedback"></span>
+		</form>
+		&copy; CalcolaLaMedia 2016 - Segui <a href="https://it.linkedin.com/in/donnoalessandro">Alessandro Donno</a> su LinkedIn - Disponibile sotto licenza <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+	</body>
+</html>
